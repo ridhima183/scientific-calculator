@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finance Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="calculator">
+
+<div class="display-wrap">
+<h2>Finance Calculator</h2>
+<p>Select a calculation</p>
+</div>
+
+<select id="calculatorType">
+
+<option value="si">Simple Interest</option>
+<option value="ci">Compound Interest</option>
+<option value="emi">EMI Calculator</option>
+<option value="gst">GST Calculator</option>
+<option value="discount">Discount Calculator</option>
+
+</select>
+
+<input type="number" id="amount" placeholder="Principal Amount">
+
+<input type="number" id="rate" placeholder="Interest / GST Rate (%)">
+
+<input type="number" id="time" placeholder="Time (Years / Months)">
+
+<button onclick="calculate()">
+Calculate
+</button>
+
+<div class="result">
+
+<h3>Result</h3>
+
+<p id="output">0</p>
+
+</div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

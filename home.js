@@ -6,7 +6,6 @@ function openScientific(){
 
 function openFinance(){
 
-    window.locati
-    on.href = "finance\\index.html";
+    window.location.href = "finance\\index.html";
 
 }
