@@ -1,61 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scientific Calculator</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Calculator</title>
+
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
-  <main class="calculator">
-    <div class="display-wrap">
-      <div id="history" class="history"></div>
-      <div id="display" class="display">0</div>
+
+<div class="container">
+
+    <h1>🧮 Multi Calculator</h1>
+
+    <p>Select the calculator you want to use</p>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🔬</div>
+
+            <h2>Scientific Calculator</h2>
+
+            <p>
+                Perform scientific calculations including
+                trigonometry, logarithms, powers,
+                square roots and more.
+            </p>
+
+            <button onclick="openScientific()">
+                Open Calculator
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">💰</div>
+
+            <h2>Finance Calculator</h2>
+
+            <p>
+                Calculate EMI, Simple Interest,
+                Compound Interest, GST,
+                Percentage and Financial Planning.
+            </p>
+
+            <button onclick="openFinance()">
+                Open Calculator
+            </button>
+
+        </div>
+
     </div>
 
-    <div class="buttons">
-      <button class="btn fn" data-action="clear">AC</button>
-      <button class="btn fn" data-action="delete">DEL</button>
-      <button class="btn fn" data-action="percent">%</button>
-      <button class="btn fn" data-action="divide">÷</button>
+</div>
 
-      <button class="btn fn" data-action="sin">sin</button>
-      <button class="btn fn" data-action="cos">cos</button>
-      <button class="btn fn" data-action="tan">tan</button>
-      <button class="btn fn" data-action="multiply">×</button>
+<script src="home.js"></script>
 
-      <button class="btn fn" data-action="log">log</button>
-      <button class="btn fn" data-action="ln">ln</button>
-      <button class="btn fn" data-action="sqrt">√</button>
-      <button class="btn fn" data-action="subtract">−</button>
-
-      <button class="btn num" data-value="7">7</button>
-      <button class="btn num" data-value="8">8</button>
-      <button class="btn num" data-value="9">9</button>
-      <button class="btn fn" data-action="add">+</button>
-
-      <button class="btn num" data-value="4">4</button>
-      <button class="btn num" data-value="5">5</button>
-      <button class="btn num" data-value="6">6</button>
-      <button class="btn fn" data-action="power">xʸ</button>
-
-      <button class="btn num" data-value="1">1</button>
-      <button class="btn num" data-value="2">2</button>
-      <button class="btn num" data-value="3">3</button>
-      <button class="btn fn" data-action="square">x²</button>
-
-      <button class="btn fn" data-action="pi">π</button>
-      <button class="btn num" data-value="0">0</button>
-      <button class="btn num" data-value=".">.</button>
-      <button class="btn fn" data-action="e">e</button>
-
-      <button class="btn fn" data-action="factorial">n!</button>
-      <button class="btn fn" data-action="open-paren">(</button>
-      <button class="btn fn" data-action="close-paren">)</button>
-      <button class="btn equal" data-action="equals">=</button>
-    </div>
-  </main>
-
-  <script src="script.js"></script>
 </body>
 </html>
